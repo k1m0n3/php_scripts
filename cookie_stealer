@@ -1,0 +1,10 @@
+#file 1
+#
+<?php
+//header('location:./index.php');
+$file=fopen('ninja.txt', "w");
+$fwrite = fwrite($file, $_GET['c']);
+$fc=fclose($file);
+?>
+
+#http://site.com/file.php?c=<script>alert(document.cookie)</script>
